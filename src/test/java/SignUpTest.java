@@ -44,7 +44,7 @@ public class SignUpTest {
         nameInput.sendKeys("John Doe");
 
         WebElement emailInput = driver.findElement(By.cssSelector("#form-group--3"));
-        emailInput.sendKeys("dsssssjff073@gmail.com");
+        emailInput.sendKeys("dsssfsffsdfff073@gmail.com");
 
         WebElement passwordInput = driver.findElement(By.xpath("//*[@id=\"form-group--5\"]"));
         passwordInput.sendKeys("test123");
@@ -64,7 +64,6 @@ public class SignUpTest {
         WebElement user = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[1]/div[2]"));
         String username = user.getText();
         Assert.assertEquals(username, "John Doe");
-
     }
 
     @AfterTest
